@@ -8,8 +8,33 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontFamily: {
+      visbysemibold: ["visbysemibold", "sans-serif"],
+      visbythin: ["visbythin", "sans-serif"],
+      visbybold: ["visbybold", "sans-serif"],
+      visbyextrabold: ["visbyextrabold", "sans-serif"],
+      visbyheavy: ["visbyheavy", "sans-serif"],
+      visbylight: ["visbylight", "sans-serif"],
+      visbymedium: ["visbymedium", "sans-serif"],
+      visbyregular: ["visbyregular", "sans-serif"],
+      serif: ["Merriweather", "serif"],
+    },
+
     extend: {
       colors: {
+        secondary1: "#6DAB05",
+        gray9: "#24262D",
+        gray60: "#575F72",
+        gray50: "#6C758B",
+        gray8: "#363A44",
+        rose50: "#FEF1FA",
+        rose60: "#E61C90",
+        layoutBg100: "#F9FCFF",
+        layoutBg200: "#EFF8FF",
+        layoutBg500: "#EFF8FF",
+        worm: "#ADEF2A",
+        primary60: "#1B4AF5",
+        primary50: "#336DFF",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {
@@ -65,6 +90,9 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        onboardingImg: "url('../../public/assets/onboarding/crm-1.jpg')",
       },
       keyframes: {
         "accordion-down": {
